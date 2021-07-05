@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Git Repo List</string>
+
+    <!--Dynamic module titles-->
+    <string name="feature_gitrepolist">feature repolist</string>
+
+    <!--Bottom menu-->
+    <string name="gitrepolist">git Repo</string>
+    <string name="feature1">Feature 2</string>
+    <string name="feature2">Fewature 3</string>
+
+    <string name="next">Next List</string>
+</resources>

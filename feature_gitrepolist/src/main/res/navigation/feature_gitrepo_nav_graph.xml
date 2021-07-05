@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:moduleName="feature_gitrepolist"
+    app:startDestination="@id/albumListFragment">
+    <fragment
+        android:id="@+id/albumListFragment"
+        android:name="com.irshadillias.rakuten.assessment.feature.gitrepolist.presentation.repolist.RepoListFragment"
+        android:label="RepoListFragment"
+        app:moduleName="feature_gitrepolist">
+    </fragment>
+</navigation>
