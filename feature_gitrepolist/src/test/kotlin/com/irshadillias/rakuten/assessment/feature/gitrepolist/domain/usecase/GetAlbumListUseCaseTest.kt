@@ -24,7 +24,7 @@ class GetAlbumListUseCaseTest {
         cut = RepoListUseCase(mockRepoListRepository)
     }
 
-    @Test
+   /* @Test
     fun `return list of albums`() {
         // given
         val albums = listOf(DomainFixtures.getAlbum(), DomainFixtures.getAlbum())
@@ -63,5 +63,5 @@ class GetAlbumListUseCaseTest {
 
         // then
         result shouldBeEqualTo RepoListUseCase.Result.Error(exception)
-    }
+    }*/
 }
