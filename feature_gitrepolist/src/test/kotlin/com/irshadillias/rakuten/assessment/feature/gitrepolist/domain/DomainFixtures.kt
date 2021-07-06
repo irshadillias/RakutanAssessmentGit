@@ -1,24 +1,24 @@
 package com.irshadillias.rakuten.assessment.feature.gitrepolist.domain
 
 import com.irshadillias.rakuten.assessment.feature.gitrepolist.domain.enum.AlbumDomainImageSize
+import com.irshadillias.rakuten.assessment.feature.gitrepolist.domain.model.RepositoryData
+import com.irshadillias.rakuten.assessment.feature.gitrepolist.domain.model.RepositoryList
 
 object DomainFixtures {
+    internal fun getRepoData(
+        next: String = "https://testinng.com",
+        repoList: List<RepositoryList> = listOf(getRepoList()),
+    ): RepositoryData = RepositoryData(repoList, next)
 
-    internal fun getAlbum(
-        name: String = "albumName",
-        artist: String = "artistName",
-        images: List<AlbumImage> = listOf(getAlbumImage()),
-        wiki: AlbumWiki? = getAlbumWikiDomainModel(),
-        mbId: String? = "mbId"
-    ): Album = Album(name, artist, images, wiki, mbId)
+    internal fun getRepoList(
+        imageUrl: String = "testing",
+        name: String = "testing",
+        type: String = "testing",
+        timestamp: String = "testing",
+        size: String = "testing",
+        description: String = "testing",
+        uuid: String = "testing",
+        website : String = "testing"
+    ) = RepositoryList(imageUrl, name, type, timestamp, size, description, uuid,website)
 
-    internal fun getAlbumImage(
-        url: String = "url_${AlbumDomainImageSize.EXTRA_LARGE}",
-        size: AlbumDomainImageSize = AlbumDomainImageSize.EXTRA_LARGE
-    ) = AlbumImage(url, size)
-
-    private fun getAlbumWikiDomainModel(
-        published: String = "published",
-        summary: String = "summary"
-    ) = AlbumWiki(published, summary)
 }
