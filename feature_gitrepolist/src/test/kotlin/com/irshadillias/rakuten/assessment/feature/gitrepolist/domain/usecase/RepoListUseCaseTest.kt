@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.net.UnknownHostException
 
-class GetAlbumListUseCaseTest {
+class RepoListUseCaseTest {
 
     @MockK
     internal lateinit var mockRepoListRepository: RepoListRepositoryImpl
