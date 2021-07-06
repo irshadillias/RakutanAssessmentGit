@@ -20,7 +20,7 @@ https://api.bitbucket.org/2.0/repositories - Done
 available in JSON. -Done
 6. Write unit test for parsing function - Done
 
-## Optional Requirment
+## Optional Requirement
 
 1. Display as many information as possible available in JSON by taking the user to a detail
 page or expanding the cell (User experience and UI are flexible)  - Not Included
